@@ -48,12 +48,16 @@
     <Compile Include="Models\PVCSBasicFileInfoCollection.cs" />
     <Compile Include="Models\PVCSCheckInfo.cs" />
     <Compile Include="Models\PVCSFileGroup.cs" />
+    <Compile Include="Models\PVCSFileGroupCollection.cs" />
     <Compile Include="Models\PVCSFileLabel.cs" />
+    <Compile Include="Models\PVCSFileLabelCollection.cs" />
     <Compile Include="Models\PVCSFileReview.cs" />
+    <Compile Include="Models\PVCSFileReviewCollection.cs" />
     <Compile Include="PVCSManager.cs" />
     <Compile Include="Models\PVCSBasicFileInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\PVCSFileInfo.cs" />
+    <Compile Include="StringExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -9,6 +9,13 @@ namespace PVCSClient.Libraries
         string Version { get; set; }
 
         public PVCSFileGroup() { }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <example>-> SIT1                 Rev : 1.9</example>
+        /// <example>-> IPVPN                Rev : 1.0</example>
+        /// <param name="input"></param>
         public PVCSFileGroup(string input) : this() {
             throw new NotImplementedException();
         }
