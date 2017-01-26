@@ -1,0 +1,99 @@
+﻿Mostrando informacion del fichero : CRM/BBDD/BTS/PACKAGES/PCK_BTS_CREDITSCORING.sql
+==============================================================================
+
+Etiquetas de PCK_BTS_CREDITSCORING.sql :
+
+        ->Initial version................................... rev: 1.0
+        ->Promocionado a SIT2: 05/11/2016 14:30:19.......... rev: 1.2
+        ->Promocionado a PROD 16/11/2016 en................. rev: 1.2
+        ->Promocionado a SIT2 01/12/2016 a las 134336 en ver rev: 1.4
+        ->Promocionado a PROD 01/12/2016 a las 134922 en ver rev: 1.4
+        ->Promocionado a TST: 01/12/2016 15:24:19........... rev: 1.5
+        ->Promocionado a SIT1: 02/12/2016 13:08:09.......... rev: 1.5
+        ->Version PROD...................................... rev: 1.8
+        ->Promocionado a TST1 05/01/2017 a las 125032 en 232 rev: 1.7
+        ->Promocionado a PPRD 05/01/2017 a las 125259 en 232 rev: 1.7
+        ->Promocionado a TST1 10/01/2017 a las 190409 en 232 rev: 1.5
+        ->Promocionado a TST1 10/01/2017 a las 192828 en 232 rev: 1.5
+        ->Promocionado a TST1 10/01/2017 a las 194942 en 232 rev: 1.5
+        ->Promocionado a TST1 10/01/2017 a las 212948 en 232 rev: 1.5
+        ->Promocionado a TST1 10/01/2017 a las 220313 en 232 rev: 1.5
+        ->Promocionado a TST 26/01/2017 a las 055521 en es17 rev: 1.9
+        ->Promocionado a SIT1 26/01/2017 a las 055533 en es1 rev: 1.9
+
+
+Grupos de PCK_BTS_CREDITSCORING.sql :
+
+        -> SIT1                 Rev : 1.9
+        -> SIT2                 Rev : 1.8
+        -> IPVPN                Rev : 1.0
+        -> PROD                 Rev : 1.8
+        -> TST                  Rev : 1.9
+        -> TST1                 Rev : 1.5
+        -> PPRD                 Rev : 1.7
+        -> DEV                  Rev : 1.9
+
+
+Revisiones de PCK_BTS_CREDITSCORING.sql :
+
+-----------------------------------
+Rev 1.9
+Checked in:     25 Jan 2017 11:53:54
+Last modified:  25 Jan 2017 11:24:04
+Author id: amdo_d31     lines deleted/added/moved: 0/0/0
+#Checked in : amdo_d31 20170125 Reingenieria CreditScoring (madefng02)
+-----------------------------------
+Rev 1.8
+Checked in:     19 Dec 2016 12:06:46
+Last modified:  21 Nov 2016 14:43:20
+Author id: platafor     lines deleted/added/moved: 0/0/0
+#Checked in : amdo_d32 20161130 Reingenieria CS (mademcs13)  #Checked Out: amdo_d31  de 25 2017 enero PCK_BTS_CREDITSCORING.sql  (VOS01812F01V00) Reingenieria CreditScoring (madefng02)
+-----------------------------------
+Rev 1.7
+Checked in:     02 Dec 2016 19:47:24
+Last modified:  02 Dec 2016 19:14:48
+Author id: platafor     lines deleted/added/moved: 0/0/0
+#Checked in : amdo_d32 20161130 Reingenieria CS (mademcs13) #Checked Out: amdo_d31  7 Dec 2016 08:48:27 PCK_BTS_CREDITSCORING.sql  (VOS01812F01V00) Reingenieria CreditScoring (madefng02)
+-----------------------------------
+Rev 1.6
+Checked in:     02 Dec 2016 16:48:58
+Last modified:  02 Dec 2016 16:34:42
+Author id: platafor     lines deleted/added/moved: 0/0/0
+Version de PROD (platafor)
+-----------------------------------
+Rev 1.5
+Checked in:     30 Nov 2016 16:25:58
+Last modified:  30 Nov 2016 16:24:40
+Author id: amdo_d32     lines deleted/added/moved: 0/0/0
+#Checked in : amdo_d32 20161130 Reingenieria CS (mademcs13)
+-----------------------------------
+Rev 1.4
+Checked in:     27 Nov 2016 17:29:08
+Last modified:  21 Nov 2016 14:43:20
+Author id: pvcs     lines deleted/added/moved: 0/0/0
+#Checked in : amdo_d22 20161111 (COR01222F01V00) Cambio Fraude (Lydia Sanchez) #Checked Out: amdo_d32  30 Nov 2016 16:14:46 PCK_BTS_CREDITSCORING.sql  (VOS01812F01V00) Reingenieria CS (mademcs13)
+-----------------------------------
+Rev 1.3
+Checked in:     11 Nov 2016 12:19:34
+Last modified:  11 Nov 2016 12:18:02
+Author id: amdo_d22     lines deleted/added/moved: 0/0/0
+#Checked in : amdo_d22 20161111 (COR01222F01V00) Cambio Fraude (Lydia Sanchez)
+-----------------------------------
+Rev 1.2
+Checked in:     03 Nov 2016 13:59:58
+Last modified:  03 Nov 2016 13:53:46
+Author id: amdo_d22     lines deleted/added/moved: 0/0/0
+#Checked in : amdo_d22 20161103 Incidencia_Produccion (madeams06)  #Checked Out: amdo_d22  11 Nov 2016 12:17:11 PCK_BTS_CREDITSCORING.sql  (COR01222F01V00) Cambio Fraude (Lydia Sanchez)
+-----------------------------------
+Rev 1.1
+Checked in:     31 Oct 2016 18:23:26
+Last modified:  31 Oct 2016 18:22:12
+Author id: amdo_d22     lines deleted/added/moved: 0/0/0
+#Checked in : amdo_d22 20161031 INC000019759085 (madeams06) #Checked Out: amdo_d22  3 Nov 2016 13:59:01 PCK_BTS_CREDITSCORING.sql  (INC000019759085) Incidencia_Produccion (madeams06)
+-----------------------------------
+Rev 1.0
+Checked in:     02 Oct 2016 22:01:54
+Last modified:  02 Oct 2016 20:42:16
+Author id: pvcs     lines deleted/added/moved: 0/0/0
+ #Checked Out: amdo_d22  31 Oct 2016 17:45:34 pck_bts_creditscoring.sql  (INC000019759085) Incidencia_Produccion (madeams06)
+===================================
