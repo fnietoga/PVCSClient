@@ -12,9 +12,21 @@ namespace PVCSClient.Libraries.Tests
     public class PVCSFileGroupTests
     {
         [TestMethod()]
-        public void PVCSFileGroupTest()
+        public void PVCSFileGroup_Test1()
         {
-            Assert.Fail();
+            string str = "-> SIT1                 Rev : 1.9";
+            var target = new PVCSFileGroup(str);
+            Assert.AreEqual("SIT1", target.Environment);
+            Assert.AreEqual("1.9", target.Version);
+        }
+
+        [TestMethod()]
+        public void PVCSFileGroup_Test2()
+        {
+            string str = "-> IPVPN                Rev : 1.01";
+            var target = new PVCSFileGroup(str);
+            Assert.AreEqual("IPVPN", target.Environment);
+            Assert.AreEqual("1.01", target.Version);
         }
     }
 }

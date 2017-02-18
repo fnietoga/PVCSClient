@@ -36,6 +36,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="PVCSClient.Libraries.Fakes">
+      <HintPath>FakesAssemblies\PVCSClient.Libraries.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="Renci.SshNet, Version=2016.0.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
+      <HintPath>..\packages\SSH.NET.2016.0.0\lib\net40\Renci.SshNet.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
   </ItemGroup>
   <Choose>
@@ -60,6 +70,7 @@
     <Compile Include="Models\PVCSFileLabelTests.cs" />
     <Compile Include="Models\PVCSFileReviewTests.cs" />
     <Compile Include="PVCSManagerTests.cs" />
+    <Compile Include="StringExtensionsTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PVCSClient.Libraries\PVCSClient.Libraries.csproj">
@@ -70,6 +81,11 @@
   <ItemGroup>
     <Content Include="Inputs\Info.txt" />
     <Content Include="Inputs\Listado.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Fakes Include="Fakes\PVCSClient.Libraries.fakes" />
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

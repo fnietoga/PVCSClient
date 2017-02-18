@@ -4,9 +4,9 @@ namespace PVCSClient.Libraries
 {
     public class PVCSFileGroup
     {
-        string Environment { get; set; }
+        public string Environment { get; set; }
 
-        string Version { get; set; }
+        public string Version { get; set; }
 
         public PVCSFileGroup() { }
 
@@ -16,8 +16,11 @@ namespace PVCSClient.Libraries
         /// <example>-> SIT1                 Rev : 1.9</example>
         /// <example>-> IPVPN                Rev : 1.0</example>
         /// <param name="input"></param>
-        public PVCSFileGroup(string input) : this() {
-            throw new NotImplementedException();
+        public PVCSFileGroup(string input) : this()
+        {
+            this.Environment = input.ExtractString(@"\s*(?:->)\s*(\w+)\b");
+
+            this.Version = input.ExtractVersion();
         }
     }
 }

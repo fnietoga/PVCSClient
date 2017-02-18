@@ -1,12 +1,12 @@
 ﻿using System;
 
 namespace PVCSClient.Libraries
-{
-    public class PVCSBasicFileInfo
+{ 
+    public class PVCSBasicFileInfo  
     {
-        string Path { get; set; }
-        string Name { get; set; }
-        string LockedBy { get; set; }
+        public string Path { get; set; }
+        public string Name { get; set; }
+        public string LockedBy { get; set; }
 
         public PVCSBasicFileInfo() { }
 
@@ -17,7 +17,8 @@ namespace PVCSClient.Libraries
         /// <example>CRM/BBDD/BTS/FUNCIONES/SELECTUPDATEOLPOLLING_2.sql              Bloqueado por : amdo_d31</example>
         /// <param name="input"></param>
         public PVCSBasicFileInfo(string input) : this() {
-            throw new NotImplementedException();
+            //TODO: Implement
+            throw new NotImplementedException();           
         }
     }
 }

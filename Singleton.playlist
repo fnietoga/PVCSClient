@@ -1,0 +1,1 @@
+<Playlist Version="1.0"><Add Test="PVCSClient.Libraries.Tests.PVCSManagerTests.PVCSManager_EmptyConstructor_Test" /><Add Test="PVCSClient.Libraries.Tests.PVCSManagerTests.PVCSManager_InstanceInit_Test" /></Playlist>

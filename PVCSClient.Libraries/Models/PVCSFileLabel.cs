@@ -6,10 +6,10 @@ namespace PVCSClient.Libraries
 {
     public class PVCSFileLabel
     {
-        public string Descripcion { get; set; }
-        public string Environment { get; set; }
-        public DateTime? Date { get; set; }
-        public string Version { get; set; }
+        public string Descripcion { get; private  set; }
+        public string Environment { get; private set; }
+        public DateTime? Date { get; private set; }
+        public string Version { get; private set; }
 
         public PVCSFileLabel() { }
         /// <summary>
@@ -26,13 +26,12 @@ namespace PVCSClient.Libraries
 
             //Busca el entorno
             this.Environment = input.ExtractString(@"\b(?:Promocionado a|Version)\s*(\w+)\b");
- 
+
             //Extrae la fecha y hora
             this.Date = input.ExtractDateTime();
 
             //Busca la version
-            this.Version = input.ExtractString(@"\brev:\s*(\d+.\d+)\b");
-            //.*?= Cualquier texto, \s?= espacio opcional, \d+ = numerico con uno o varios digitos
+            this.Version = input.ExtractVersion();
         }
     }
 

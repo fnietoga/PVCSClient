@@ -53,6 +53,7 @@
     <Compile Include="Models\PVCSFileLabelCollection.cs" />
     <Compile Include="Models\PVCSFileReview.cs" />
     <Compile Include="Models\PVCSFileReviewCollection.cs" />
+    <Compile Include="Models\SshCommandBehaviorAttribute.cs" />
     <Compile Include="PVCSManager.cs" />
     <Compile Include="Models\PVCSBasicFileInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

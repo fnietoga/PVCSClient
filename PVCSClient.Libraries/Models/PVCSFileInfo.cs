@@ -4,40 +4,43 @@ namespace PVCSClient.Libraries
 {
     public class PVCSFileInfo : PVCSBasicFileInfo
     {
-        PVCSFileLabelCollection Labels { get; set; }
+        public PVCSFileLabelCollection Labels { get; private set; }
 
-        PVCSFileGroupCollection Groups { get; set; }
+        public PVCSFileGroupCollection Groups { get; private set; }
 
-        PVCSFileReviewCollection Reviews { get; set; }
+        public PVCSFileReviewCollection Reviews { get; private set; }
 
         public PVCSFileInfo() { }
         public PVCSFileInfo(string input) : this()
         {
             //Localiza el bloque de Etiquetas
-            string etiquetas = this.ExtractLabelsText();
+            string etiquetas = this.ExtractLabelsText(input);
             this.Labels = new PVCSFileLabelCollection(etiquetas);
 
             //Localiza el bloque de Grupos
-            string grupos = this.ExtractGroupsText(); 
+            string grupos = this.ExtractGroupsText(input); 
             this.Groups = new PVCSFileGroupCollection(grupos);
 
             //Localiza el bloque de Revisiones
-            string revisiones = this.ExtractReviewsText();  
+            string revisiones = this.ExtractReviewsText(input);  
             this.Reviews = new PVCSFileReviewCollection(revisiones);
         }
 
-        private string ExtractReviewsText()
+        internal string ExtractReviewsText(string input)
         {
+            //TODO: Implement
             throw new NotImplementedException();
         }
 
-        private string ExtractGroupsText()
+        internal string ExtractGroupsText(string input)
         {
+            //TODO: Implement
             throw new NotImplementedException();
         }
 
-        private string ExtractLabelsText()
+        internal string ExtractLabelsText(string input)
         {
+            //TODO: Implement
             throw new NotImplementedException();
         }
     }
